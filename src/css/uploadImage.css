@@ -1,0 +1,51 @@
+:root {
+    --background: #f7f7f7;
+    --primary: #000000;
+    --secondary: #cccccc;
+    --sec-text: grey;
+    --active: #0266ff;
+}
+.profile-image img{
+    margin-top: 5%;
+    width: 200px;
+
+}
+.buttons{
+    width: 50%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.buttons button{
+    color: #ffffff;
+    background-color: #0266ff;
+    font-size: 15px;
+    border: 1px solid #2d63c8;
+    border-radius: 15px;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 40%;
+}
+@media screen and (max-width : 768px) {
+.buttons{
+    flex-direction: column;
+    width: 60%;
+}
+.buttons button{
+    margin-top: 5%;
+    width: 60%;
+}
+}
+
+@media screen and (max-width : 540px) {
+    .buttons{
+        flex-direction: column;
+        width: 80%;
+    }
+    .buttons button{
+        margin-top: 5%;
+        width: 70%;
+    }
+
+}

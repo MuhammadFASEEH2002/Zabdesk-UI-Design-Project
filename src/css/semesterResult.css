@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    background-color: var(--active);
+    padding: 0.8em;
+}
+
+.header h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Roboto';
+}
+
+.header-table {
+    width: 25%;
+    background-color: var(--active);
+    padding: 0.8em;
+    margin: 0.4em 0;
+    display: grid;
+    place-items: center;
+}
+
+.header-table h3 {
+    color: #fff;
+    word-wrap: break-word;
+    font-family: 'Roboto';
+}
+.table-data{
+    padding: 0.4em;
+    width: 25%;
+    margin-bottom: 0.4em;
+    border: 0.5px solid var(--secondary);
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto';
+}
+
+
+
+
+@media screen and (max-width: 468px) {
+    .table-data:nth-child(1){
+        font-size: small;
+    }    
+    .header-table h3 {
+        font-size: 0.8em;
+        word-wrap: break-word;
+    }
+}

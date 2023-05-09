@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+:root {
+    --background: #f7f7f7;
+    --primary: #000000;
+    --secondary: #cccccc;
+    --sec-text: grey;
+    --active: #0266ff;
+}
+
+
+i{
+    color: var(--active);
+    margin: 0 0.3em;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: medium;
+    color: #000;
+    display: block;
+    font-family: 'Roboto';
+    transition: 0.3s;
+    margin-top: 0.3em;
+}
+
+.top {
+    display: flex;
+    margin: 1em 0em;
+}
+
+.top img {
+    width: 70%;
+    height: 60px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    transition: all 0.8s;
+    position: relative;
+    background-color: var(--active);
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    width: 95%;
+    margin-left: auto;
+    color: #FFF !important;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+     top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.active {
+    position: relative;
+    background-color: var(--active);
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    width: 95%;
+    margin-left: auto;
+    color: #FFF !important;
+}
+
+.active i{
+    color: #fff;
+}
+
+.active::after {
+    content: "";
+    width: 10px;
+    background-color: var(--active);
+    height: 10px;
+    position: absolute;
+    top: -5px;
+    right: -3px;
+    border-top-left-radius: 20px;
+}
+
+.active::before {
+    content: "";
+    width: 10px;
+    background-color: var(--active);
+    height: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: -3px;
+    border-bottom-left-radius: 20px;
+}
+
+.open-menu{
+    position: fixed;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+    font-size: 2.5em;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/index.css">
+</head>
+
+<body>
+
+
+    <div class="main flex">
+        <!-- LEFT SIDEBAR WITH FORM -->
+        <div class="side side-form center">
+            <!-- HEADER -->
+            <div class="center w100">
+                <h3 class="heading">SignIn</h3>
+                <p class="subheading">Please Enter Credientials To Continue</p>
+            </div>
+            <!-- FORM -->
+            <div class="w100 side-form-form center">
+                <form action="index.html" enctype="multipart/form-data" method="post" class="form">
+                   <div class="form-input w100 flex">
+                       <span class="material-icons-round icon-size" style="max-width: 20px;"> pin_outline </span>
+                       <input type="number" name="regno" id="regno" placeholder="Enter your Regno" required>
+                    </div>
+                    <div class="form-input w100 flex">
+                        <span class="material-icons-round icon-size"> password </span>
+                        <input type="password" name="password" id="password" placeholder="Enter a Password " required>
+                    </div>
+                    <div class="error-msg" id="error_msg">
+                        
+                    </div>
+
+                    <a href="" id="login_link"><button class="btn" id="login_button">Submit</button></a> 
+                    
+                    <button class="btn">forgot password</button>
+                    
+                </form>
+            </div> 
+
+        </div>
+        <!-- SIDEBAR IMAGE -->
+        <div class="side side-image">
+                <h2 class="notice-title">Notice Board</h2>
+                <div class="notice-list">
+                    <div class="notice-card">
+                        <h3 class="notice-card-title">Generate Online Fees</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro dolore inventore quae aliquid, dolorem officiis libero quo labore ipsam voluptate consequatur pariatur voluptatum repudiandae quas magni similique placeat. Esse?
+                        </p>
+                    </div>
+                    <div class="notice-card">
+                        <h3 class="notice-card-title">Generate Online Fees</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro dolore inventore quae aliquid, dolorem officiis libero quo labore ipsam voluptate consequatur pariatur voluptatum repudiandae quas magni similique placeat. Esse?
+                        </p>
+                    </div>
+                    <div class="notice-card">
+                        <h3 class="notice-card-title">Generate Online Fees</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro dolore inventore quae aliquid, dolorem officiis libero quo labore ipsam voluptate consequatur pariatur voluptatum repudiandae quas magni similique placeat. Esse?
+                        </p>
+                    </div>
+                    <div class="notice-card">
+                        <h3 class="notice-card-title">Generate Online Fees</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro dolore inventore quae aliquid, dolorem officiis libero quo labore ipsam voluptate consequatur pariatur voluptatum repudiandae quas magni similique placeat. Esse?
+                        </p>
+                    </div>
+                    <div class="notice-card">
+                        <h3 class="notice-card-title">Generate Online Fees</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro dolore inventore quae aliquid, dolorem officiis libero quo labore ipsam voluptate consequatur pariatur voluptatum repudiandae quas magni similique placeat. Esse?
+                        </p>
+                    </div>
+                     <div class="notice-card">
+                        <h3 class="notice-card-title">Generate Online Fees</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro dolore inventore quae aliquid, dolorem officiis libero quo labore ipsam voluptate consequatur pariatur voluptatum repudiandae quas magni similique placeat. Esse?
+                        </p>
+                    </div>
+                    <div class="notice-card">
+                        <h3 class="notice-card-title">Generate Online Fees</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores porro dolore inventore quae aliquid, dolorem officiis libero quo labore ipsam voluptate consequatur pariatur voluptatum repudiandae quas magni similique placeat. Esse?
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    var regno_field=document.getElementById("regno");
+    var password_field=document.getElementById("password");
+    var error=document.getElementById("error_msg");
+    var login=document.getElementById("login_button");
+    regno_regex= /^\d{7,}$/;
+    var password_regex=/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+=\[{\]}\|:;\"'<,>.?/])(?!.*\s).{8,}$/;
+    login.addEventListener("click", function(){
+        
+        event.preventDefault();
+        error.innerHTML="<p></p>";
+        if((regno_field.value.trim()=="") || (password_field.value.trim()=="")){
+            error.innerHTML="<p>*Fields cannot be left empty</p>";
+        }else{
+            if(!regno_regex.test(regno_field.value.trim())){
+                error.innerHTML="<p>*Registeration number should contain at least 7 numbers</p>";
+            }
+            if(!password_regex.test(password_field.value.trim())){
+                error.innerHTML +="<p>*Password should have atleast 8 characters. One capital letter, one number and one special character is must</p>";
+            }
+            if((regno_field.value.trim()=="2012390") && (password_field.value.trim()=="Aeiou.123")){
+                window.location.href = "../szabdesk/home/index.html";
+
+           }
+        }
+    });
+</script>
+
+</html>

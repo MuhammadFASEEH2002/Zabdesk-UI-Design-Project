@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    line-height: 1.15;
+}
+
+:root {
+    --background: #f7f7f7;
+    --primary: #000000;
+    --secondary: #cccccc;
+    --sec-text: grey;
+    --active: #0266ff;
+}
+
+
+/* REUSEABLE CLASSES START */
+.w100 {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.js-content-center {
+    justify-content: center;
+}
+
+.al-items-center {
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+/* USED IN MAIN CONTAINER */
+.main .side-form {
+    width: 40%;
+    height: 100%;
+}
+
+.main .side-image {
+    width: 60%;
+    height: 100%;
+}
+
+/* REUSEABLE CLASSES END */
+
+
+
+
+
+/* OUR MAIN CONTAINER */
+.main {
+    background-color: var(--background);
+    width: 100vw;
+    height: 100svh;
+}
+
+/* SIDE FORM  STYLING */
+.main .side-form .heading {
+    color: var(--primary);
+    font-size: 2.2em;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.main .side-form .subheading {
+    color: var(--sec-text);
+    margin: 0.5em 0;
+    font-weight: 200;
+    font-family: "Roboto";
+    font-size: small;
+}
+
+
+.main .side-form .side-form-form .form-input span {
+    margin: 0em 0.5em;
+}
+
+.main .side-form .side-form-form .form-input {
+    border: 1px solid var(--secondary);
+    padding: 1em;
+    border-radius: 0.3em;
+    margin: 1.3em 0;
+}
+
+.main .side-form .side-form-form .form-input input,
+input:active,
+input:focus {
+    width: 100%;
+    border: none;
+    background-color: var(--background);
+    outline: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    font-weight: 300;
+}
+
+.form {
+    width: 60%;
+}
+.error-msg{
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    color: red;
+}
+
+.main .side-form .side-form-form .btn {
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+    font-weight: 500;
+    width: 100%;
+    background-color: var(--active);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: 0.7rem 0;
+    cursor: pointer;
+}
+.main .side-form .side-form-form .btn:hover {
+    color: var(--active);
+    background-color: #000000;
+}
+
+.main .side-form .side-form-header {
+    margin: 1.8em 0.5em;
+}
+
+
+
+
+/* SIDE IMAGE STYLING */
+.main .side-image {
+    position: relative;
+    background-color: #0266ff;
+    margin: 1em;
+    width: 56%;
+    height: 95%;
+    border-radius: 0.5em;
+}
+
+.main .side-image .notice-title {
+    padding: 1em 2em;
+    background-color: #fff;
+    max-width: 160px;
+    border-radius: 0.4em;
+    margin: 1em 0.4em;
+    font-family: 'Roboto';
+    font-size: medium;
+    font-weight: 500;
+    position: absolute;
+    top: -20px;
+    right: 40%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.notice-list{
+    margin: 1em;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 95%;
+}
+.notice-list .notice-card{
+    background-color: tomato;
+    padding: 1em;
+    max-width: 300px;
+    margin: 1em;
+    font-family: 'Roboto';
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.notice-list .notice-card .notice-card-title{
+    margin: 1em 0em;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width : 768px) {
+     .main {
+        flex-wrap: wrap;
+     }
+    .main .side-image {
+        width: 100% !important;
+    }
+
+    .main .side-form {
+        width: 100%;
+    }
+
+    .form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width : 540px) {
+    .form {
+        width: 80%;
+    }
+    .main .side-image .notice-title{
+        right: 25%;
+    }
+}
