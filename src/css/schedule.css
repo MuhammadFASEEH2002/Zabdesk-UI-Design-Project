@@ -1,0 +1,36 @@
+.header {
+    width: 100%;
+    background-color: var(--active);
+    padding: 0.8em;
+    margin-top: 3%;
+}
+
+.header h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Roboto';
+}
+
+.header-table {
+    width: 20%;
+    background-color: var(--active);
+    padding: 0.8em;
+    margin: 0.4em 0;
+    display: grid;
+    place-items: center;
+}
+
+.header-table h3 {
+    color: #fff;
+    word-wrap: break-word;
+    font-family: 'Roboto';
+}
+.table-data{
+    padding: 0.4em;
+    width: 20%;
+    margin-bottom: 0.4em;
+    border: 0.5px solid var(--secondary);
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto';
+}

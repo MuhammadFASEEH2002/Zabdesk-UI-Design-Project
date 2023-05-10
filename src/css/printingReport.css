@@ -1,0 +1,66 @@
+.pdf_logo{
+    margin-top: 5%;
+    width: 100%;
+}
+.pdf_logo img{
+    width: 200px;
+}
+.input_quantity{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Roboto';
+}
+.input_quantity input{
+    margin-bottom: 2%;
+    padding: 1.5% 2%;
+    width: 60%;
+    border: 0.8px solid grey;
+    border-radius: 5px;
+}
+.print-button{
+    width: 25%;
+    padding: 1.5% 2%;
+    margin-top: 1%;
+    border-radius: 15px;
+    border: 1px solid #0266ff;
+    background-color: var(--active);
+    letter-spacing: 1px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 468px) {
+    .pdf_logo{
+        margin-top: 25%;
+    }
+    .pdf_logo img{
+        width: 150px;
+    }
+    .input_quantity{
+        width: 90%;
+        margin-top: 10%;
+    }
+    .input_quantity input{
+        width: 100%;
+        padding: 3% 2%;
+        margin-bottom: 7%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .pdf_logo{
+        margin-top: 15%;
+    }
+    .pdf_logo img{
+        width: 150px;
+    }
+    .input_quantity{
+        width: 70%;
+        margin-top: 10%;
+    }
+    .input_quantity input{
+        width: 80%;
+        padding: 3% 2%;
+        margin-bottom: 7%;
+    }
+}

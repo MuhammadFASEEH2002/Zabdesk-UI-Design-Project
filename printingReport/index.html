@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../src/css/default.css">
         <link rel="stylesheet" href="../src/css/sidebar.css">
+        <link rel="stylesheet" href="../src/css/printingReport.css">
 </head>
 
 <body>
@@ -32,18 +33,36 @@
         <a href="../schedule/index.html"><i class="fa-solid fa-calendar-days"></i>Schedule</a>
         <a href="../printingReport/index.html" class="active"><i class="fa-solid fa-file"></i>Printing Report</a>
         <a href="../changePassword/index.html"><i class="fa-solid fa-key"></i>Change Password</a>
-        <a href="#"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a>
+        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a>
     </div>
 
     <span class="open-menu" onclick="openNav()">&#8801;</span>
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
-         
+         <div class="pdf_logo flex content-center">
+            <img src="../src/images/pdf_logo.jpg" alt="pdf_logo_image">
+         </div>
+         <div class="input_quantity flex column items-center">
+            Number of Pages<input type="number" name="" id="pages" placeholder="Enter Number of Pages to be Printed"  oninput="print()" required>
+            Total Amount<input type="text" placeholder="Total Amount" id="amounts" readonly onload="print()" on>
+            <button class="print-button" >Print</button>
+         </div>
     </div>
 
    <script src="../src/js/nav.js"></script>
    <script src="../src/js/progressbar.js"></script>
 </body>
+<script>
+    var page=document.getElementById("pages");
+    var amount=document.getElementById("amounts");
+    function print(){
+        var pages_num=page.value.trim();
+        var total_amount=parseInt(pages_num)*10;
+        amount.value="Rs "+ total_amount;
+
+    }
+
+</script>
 
 </html>

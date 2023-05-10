@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | SZABDESK</title>
+    <title>Change Password | SZABDESK</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../src/css/default.css">
         <link rel="stylesheet" href="../src/css/sidebar.css">
+        <link rel="stylesheet" href="../src/css/changePassword.css">
 </head>
 
 <body>
@@ -32,15 +33,31 @@
         <a href="../schedule/index.html"><i class="fa-solid fa-calendar-days"></i>Schedule</a>
         <a href="../printingReport/index.html"><i class="fa-solid fa-file"></i>Printing Report</a>
         <a href="../changePassword/index.html" class="active"><i class="fa-solid fa-key"></i>Change Password</a>
-        <a href="#"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a>
+        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a>
     </div>
 
     <span class="open-menu" onclick="openNav()">&#8801;</span>
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
-         
-    </div>
+        <div class="change-password flex column items-center">
+            <img src="../src/images/password.png" alt="" style="width: 200px;">
+            <div class="input_password flex column items-center">
+                <p class="flex" style="align-items: flex-start;">Old Password</p>
+                <input type="password"  name="" id="pages" placeholder="Enter Old Password" required>
+             </div>
+             <div class="input_password flex column items-center">
+                <p class="flex" style="align-items: flex-start;">New Password</p>
+                <input type="password"  name="" id="pages" placeholder="Enter New Password" required>
+             </div>
+             <div class="input_password flex column items-center">
+                <p class="flex" style="align-items: flex-start;">Confirm New Password</p>
+                <input type="password"  name="" id="pages" placeholder="Enter New Password Again" required>
+             </div>  
+             <button class="confirm-button">Change Password</button>    
+        </div>
+       
+   </div>
 
    <script src="../src/js/nav.js"></script>
    <script src="../src/js/progressbar.js"></script>

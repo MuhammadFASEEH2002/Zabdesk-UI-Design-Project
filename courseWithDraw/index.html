@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="../src/css/default.css">
         <link rel="stylesheet" href="../src/css/sidebar.css">
+        <link rel="stylesheet" href="../src/css/courseWithdraw.css">
 </head>
 
 <body>
@@ -32,14 +33,107 @@
         <a href="../schedule/index.html"><i class="fa-solid fa-calendar-days"></i>Schedule</a>
         <a href="../printingReport/index.html"><i class="fa-solid fa-file"></i>Printing Report</a>
         <a href="../changePassword/index.html"><i class="fa-solid fa-key"></i>Change Password</a>
-        <a href="#"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a>
+        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a>
     </div>
 
     <span class="open-menu" onclick="openNav()">&#8801;</span>
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
-         
+        <div class="flex column">
+            <!-- FALL 2022 RESULT -->
+            <div class="header flex content-center">
+                <h2>Select Courses You Want to Withdraw</h2>
+            </div>
+            <div class="flex row">
+                <div class="header-table">
+                    <h3>Course Name</h3>
+                </div>
+                <div class="header-table">
+                    <h3>Faculty</h3>
+                </div>
+                <div class="header-table">
+                    <h3>Semester</h3>
+                </div>
+                <div class="header-table">
+                    <h3>Select</h3>
+                </div>    
+            </div>
+            <div class="flex row wrap">
+                <div class="table-data">
+                    <h4>CSC1201 Discrete Mathematical Structures</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Kiran Mansoor Velani</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Fall 2020</h4>
+                </div>
+                <div class="table-data">
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
+            <div class="flex row wrap">
+                <div class="table-data">
+                    <h4>CSC1201 Discrete Mathematical Structures</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Kiran Mansoor Velani</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Fall 2020</h4>
+                </div>
+                <div class="table-data">
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
+            <div class="flex row wrap">
+                <div class="table-data">
+                    <h4>CSC1201 Discrete Mathematical Structures</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Kiran Mansoor Velani</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Fall 2020</h4>
+                </div>
+                <div class="table-data">
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
+            <div class="flex row wrap">
+                <div class="table-data">
+                    <h4>CSC1201 Discrete Mathematical Structures</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Kiran Mansoor Velani</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Fall 2020</h4>
+                </div>
+                <div class="table-data">
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
+            <div class="flex row wrap">
+                <div class="table-data">
+                    <h4>CSC1201 Discrete Mathematical Structures</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Kiran Mansoor Velani</h4>
+                </div>
+                <div class="table-data">
+                    <h4>Fall 2020</h4>
+                </div>
+                <div class="table-data">
+                    <input type="checkbox" name="" id="">
+                </div>
+            </div>
+        </div>
+        <div class="buttons flex row content-center items-center">
+            <button>Reset</button>
+            <button>Withdraw</button>
+         </div>  
     </div>
 
    <script src="../src/js/nav.js"></script>
