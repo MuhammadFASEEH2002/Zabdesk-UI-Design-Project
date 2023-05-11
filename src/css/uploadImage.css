@@ -6,46 +6,77 @@
     --active: #0266ff;
 }
 .profile-image img{
-    margin-top: 5%;
-    width: 200px;
+    margin-top: 3%;
+    width: 150px;
 
 }
-.buttons{
+.upload{
     width: 50%;
+    height: 150%;
+    border: 2px dashed grey;  
+    border-radius: 10px;
     justify-content: space-between;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 2%;
+    padding: 4%;
+    font-family: 'Roboto';
 }
-.buttons button{
-    color: #ffffff;
-    background-color: #0266ff;
-    font-size: 15px;
-    border: 1px solid #2d63c8;
-    border-radius: 15px;
-    padding: 15px 40px;
-    letter-spacing: 1px;
-    cursor: pointer;
+.upload h3{
+    color: #0266ff;
+}
+.upload h2{
+    margin-top: 2%;
+}
+.upload button{
+    margin-top: 2%;
     width: 40%;
-}
-@media screen and (max-width : 768px) {
-.buttons{
-    flex-direction: column;
-    width: 60%;
-}
-.buttons button{
-    margin-top: 5%;
-    width: 60%;
-}
+    padding: 1.5% 2%;
+    border-radius:15px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #0266ff;
+    background-color: var(--active);
+
 }
 
-@media screen and (max-width : 540px) {
-    .buttons{
-        flex-direction: column;
-        width: 80%;
+@media screen and (max-width : 768px) {
+    .profile-image img{
+        margin-top: 15%;
     }
-    .buttons button{
-        margin-top: 5%;
+    .upload{
         width: 70%;
+        padding: 10%;
     }
+    .upload h2{
+        margin-top: 5%;
+    }
+    .upload button{
+        width: 70%;
+        padding: 3.5% 4%;
+        margin-top: 5%;
+    }
+
+
+}
+
+@media screen and (max-width : 468px) {
+    .profile-image img{
+        margin-top: 15%;
+    }
+    .upload{
+        width: 90%;
+        padding: 10%;
+    }
+    .upload h2{
+        margin-top: 5%;
+    }
+    .upload button{
+        width: 70%;
+        padding: 3.5% 4%;
+        margin-top: 5%;
+    }
+
+
+
 
 }
