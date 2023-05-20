@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | SZABDESK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../src/css/default.css">
+        <link rel="stylesheet" href="../src/css/sidebar.css">
+        <link rel="stylesheet" href="../src/css/outline.css">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <div class="top">
+           <img src="../src/images/logofull.png" alt="">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+        </div>
+        <a href="../home/index.html" >
+            <i class="fa-sharp fa-solid fa-house-chimney"></i>
+            Home
+        </a>
+        <a href="../semesterResult/index.html"><i class="fa-solid fa-book-open-reader"></i>Semester Result</a>
+        <a href="../currentSemester/index.html"  class="active"><i class="fa-solid fa-book-open"></i>Current Semester <span style="align-items: center; opacity: 60%;">outline</span></a>
+        <a href="../previousSemester/index.html"><i class="fa-solid fa-square-poll-horizontal"></i>Previous Semester</a>
+        <a href="../courseImprovement/index.html"><i class="fa-solid fa-book"></i>Course Improve</a>
+        <a href="../courseWithDraw/index.html"><i class="fa-solid fa-graduation-cap"></i>Course withdraw</a>
+        <a href="../uploadImage/index.html"><i class="fa-solid fa-image"></i>Upload Image</a>
+        <a href="../schedule/index.html"><i class="fa-solid fa-calendar-days"></i>Schedule</a>
+        <a href="../printingReport/index.html"><i class="fa-solid fa-file"></i>Printing Report</a>
+        <a href="../changePassword/index.html"><i class="fa-solid fa-key"></i>Change Password</a>
+        <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>LogOut</a>
+    </div>
+
+    <span class="open-menu" onclick="openNav()">&#8801;</span>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+        <div class="course-details flex column">
+            <a href="../currentSemester/index.html"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+            <div class="header">
+                <h2>Outline</h2>
+            </div>
+            <div class="table-description flex row">
+                <div class="description flex items-center content-center">
+                    <p>Instructor Name</p>
+                </div>
+               <div class="description-details">
+                   <p>Ali Mobin Memon</p>
+               </div>
+            </div>
+            <div class="table-description flex row">
+                <div class="description flex items-center content-center">
+                    <p>Course Name</p>
+                </div>
+               <div class="description-details">
+                   <p>CSC1201 UI Design</p>
+               </div>
+            </div>
+            <div class="table-description flex row">
+                <div class="description flex items-center content-center">
+                    <p>Schedule & Timings</p>
+                </div>
+               <div class="description-details">
+                   <p>Monday 3:00 pm - 6:00 pm</p>
+               </div>
+            </div>
+            <div class="table-description flex row">
+                <div class="description flex items-center content-center">
+                    <p>Email</p>
+                </div>
+               <div class="description-details">
+                   <p>Ali.mobin@szabist.pk</p>
+               </div>
+            </div>
+            <div class="course-introduction">
+                <div class="header">
+                    <h2>Introduction</h2>
+                </div>
+                <p>This is not limited to using HTML, CSS and other libraries such as Bootstrap. Rather this course
+                 focuses on implementing the newer CSS3 and HTML5 elements including 3d objects rendered in webpage 
+                 and 2d Vector Graphics with pin point pixel based animations. You will learn about blender, Adobe Photoshop, HTML5, CSS3 
+                 and JavaScript for creating very interactive and alive user interfaces. Figma, Adobe XD for wire framing.</p>
+            </div>
+            <div class="course-plan">
+                <div class="header">
+                    <h2>Course Plan</h2>
+                </div>
+                <div class="table-courseplan flex row">
+                    <div class="course flex items-center content-center">
+                        <p>Week#1</p>
+                    </div>
+                   <div class="courseplan-details">
+                       <p>Introduction to UI Designing</p>
+                   </div>
+                </div>
+                <div class="table-courseplan flex row">
+                    <div class="course flex items-center content-center">
+                        <p>Week#2</p>
+                    </div>
+                   <div class="courseplan-details">
+                       <p>Intro to Web Design: HTML Introduction part (1)</p>
+                   </div>
+                </div>
+                <div class="table-courseplan flex row">
+                    <div class="course flex items-center content-center">
+                        <p>Week#3</p>
+                    </div>
+                   <div class="courseplan-details">
+                       <p>Intro to Web Design: HTML Introduction part (2)</p>
+                   </div>
+                </div>
+                <div class="table-courseplan flex row">
+                    <div class="course flex items-center content-center">
+                        <p>Week#4</p>
+                    </div>
+                   <div class="courseplan-details">
+                       <p>CSS. Psuedo Classes. Difference between inline, indocument and external css</p>
+                   </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+   <script src="../src/js/nav.js"></script>
+   <script src="../src/js/progressbar.js"></script>
+</body>
+
+</html>
