@@ -176,7 +176,7 @@ input:focus {
     height: 95%;
 }
 .notice-list .notice-card{
-    background-color: tomato;
+    background-color:#ADD8E6;
     padding: 1em;
     max-width: 300px;
     margin: 1em;

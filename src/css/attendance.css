@@ -1,0 +1,96 @@
+#main a i{
+    font-size: 1.5em;
+    margin-bottom: 1%;
+    border-radius: 50%;
+    padding: 0.5%;
+    padding-left:0.7%;
+    padding-right:0.7%;
+    border: 0.8px solid #0266ff;
+ }
+.header {
+    width: 100%;
+    background-color: var(--active);
+    padding: 0.8em;
+    margin-top: 3%;
+}
+
+.header h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Roboto';
+}
+
+.header-table {
+    width: 25%;
+    background-color: var(--active);
+    padding: 0.8em;
+    margin: 0.4em 0;
+    display: grid;
+    place-items: center;
+}
+
+.header-table h3 {
+    color: #fff;
+    word-wrap: break-word;
+    font-family: 'Roboto';
+}
+.table-data{
+    padding: 0.4em;
+    width: 25%;
+    margin-bottom: 0.4em;
+    border: 0.5px solid var(--secondary);
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto';
+}
+.buttons{
+    width: 50%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.buttons button{
+    color: #ffffff;
+    background-color: #0266ff;
+    font-size: 15px;
+    border: 1px solid #2d63c8;
+    border-radius: 15px;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 40%;
+}
+
+
+
+
+@media screen and (max-width: 468px) {
+    .header{
+        margin-top: 15%;
+    }
+    .table-data:nth-child(1) , .header-table:nth-child(1){
+        font-size: small;
+        width: 20%;
+    }    
+    .table-data:nth-child(2) , .header-table:nth-child(2){
+       width: 30%;
+    }
+    .table-data , .header-table{
+        width: 25%;
+        font-size: small;
+    }
+    .header-table h3 {
+        word-wrap: break-word;
+        font-size: 0.8em;
+        
+    }
+    .buttons{
+        flex-direction: column;
+        width: 80%;
+    }
+    .buttons button{
+        margin-top: 5%;
+        width: 70%;
+    }
+
+}

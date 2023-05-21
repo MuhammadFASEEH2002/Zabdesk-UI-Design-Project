@@ -1,27 +1,30 @@
-.pdf_logo{
-    margin-top: 5%;
-    width: 100%;
-}
-.pdf_logo img{
+.print-report img{
     width: 200px;
 }
-.input_quantity{
-    width: 70%;
+.print-report{
     margin: 0 auto;
+    width: 70%;
     margin-top: 5%;
+}
+.input-area{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3%;
     font-family: 'Roboto';
 }
-.input_quantity input{
-    margin-bottom: 2%;
-    padding: 1.5% 2%;
-    width: 60%;
+.input-area p{
+    width: 100%;
+}
+.input-area input{
+    padding: 2.5% 2%;
+    width: 100%;
     border: 0.8px solid grey;
     border-radius: 5px;
 }
 .print-button{
     width: 25%;
     padding: 1.5% 2%;
-    margin-top: 1%;
+    margin-top: 2%;
     border-radius: 15px;
     border: 1px solid #0266ff;
     background-color: var(--active);
@@ -31,36 +34,41 @@
 }
 
 @media screen and (max-width: 468px) {
-    .pdf_logo{
-        margin-top: 25%;
-    }
     .pdf_logo img{
         width: 150px;
     }
-    .input_quantity{
-        width: 90%;
-        margin-top: 10%;
+    .change-password{
+        margin-top: 18%;
     }
-    .input_quantity input{
+    .input_password{
         width: 100%;
-        padding: 3% 2%;
-        margin-bottom: 7%;
+        margin-top: 7%;
+    }
+    .input_password input{
+        padding: 3.5% 4%;
+    }
+    .confirm-button{
+        margin-top: 10%;
+        width: 100%;
+        padding: 4.5% 5%;
     }
 }
+
 @media screen and (max-width: 768px) {
-    .pdf_logo{
-        margin-top: 15%;
+    .print-report{
+        margin-top: 18%;
     }
-    .pdf_logo img{
-        width: 150px;
+    .input-area{
+        width: 100%;
+        margin-top: 7%;
     }
-    .input_quantity{
-        width: 70%;
+    .input-area input{
+        padding: 3.5% 4%;
+    }
+    .print-button{
         margin-top: 10%;
-    }
-    .input_quantity input{
         width: 80%;
-        padding: 3% 2%;
-        margin-bottom: 7%;
+        padding: 4.5% 5%;
     }
+
 }
