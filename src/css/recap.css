@@ -1,0 +1,110 @@
+.course-details{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1%;
+}
+.course-details a i{
+   font-size: 1.5em;
+   margin-bottom: 1%;
+   border-radius: 50%;
+   padding: 0.5%;
+   padding-left:0.7%;
+   padding-right:0.7%;
+   border: 0.8px solid #0266ff;
+}
+.header{
+    width: 100%;
+    background-color: var(--active);
+    padding: 0.8em;
+    text-align: center;
+}
+.header h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Roboto';
+}
+.header-2{
+    margin-top: 2%;
+    width: 100%;
+    background-color: var(--active);
+    padding: 0.8em;
+    text-align: center;
+}
+.header-2 h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Roboto';
+}
+.description{
+    border: 0.8px solid #0266ff;
+    width: 20%;
+    padding: 1%;
+    padding-left:3%;
+    padding-right:3%;
+    background-color: #0266ff;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+.description-details{
+    border: 0.8px solid #0266ff;
+    width: 40%;
+    padding: 1%;
+    padding-left:1%;
+    padding-right:3%;
+}
+.description-final{
+    border: 0.8px solid #0266ff;
+    width: 33.33%;
+    padding: 1%;
+    padding-left:1%;
+    padding-right:3%;
+}
+@media screen and (max-width: 468px) {
+    .course-details{
+        width: 100%;
+    }
+    .course-details a i{
+        padding: 1%;
+     }
+     .description{
+        width: 50%;
+        font-size: 0.8em;
+     }
+     .description-details{
+        width: 50%;
+        font-size: 0.8em;
+     }
+     .description-final{
+        font-size: 0.8em;
+     }
+
+
+}
+@media screen and (max-width: 768px) {
+    .course-details{
+        width: 100%;
+    }
+    .course-details a i{
+        padding: 1%;
+     }
+     .description{
+        width: 50%;
+        font-size: 0.8em;
+     }
+     .description-details{
+        width: 50%;
+        font-size: 0.8em;
+     }
+     .course-introduction p{
+        font-size: 0.8em;
+     }
+     .course{
+        font-size: 0.8em;
+        width: 30%;
+     }
+     .courseplan-details{
+        font-size: 0.8em;
+        width: 70%;
+     }
+
+}

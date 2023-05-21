@@ -1,0 +1,48 @@
+.back-button a i{
+    font-size: 1.5em;
+    margin-bottom: 1%;
+    border-radius: 50%;
+    padding: 0.5%;
+    padding-left:0.7%;
+    padding-right:0.7%;
+    border: 0.8px solid #0266ff;
+ }
+ .header{
+    width: 100%;
+    background-color: var(--active);
+    padding: 0.8em;
+    text-align: center;
+}
+.header h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Roboto';
+}
+.files{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+}
+.files-card{
+    text-align: center;
+    margin-top: 10%;
+    border: 0.5px solid grey;
+
+}
+.files-card img{
+    margin-top: 2%;
+    margin-bottom: 5%;
+
+}
+.files-card h3{
+    font-family:'Roboto';
+}
+.link{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+@media screen and (max-width : 768px){
+    .files{
+        grid-template-columns: auto auto;
+    }
+
+}

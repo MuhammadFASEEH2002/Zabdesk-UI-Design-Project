@@ -63,7 +63,6 @@ i{
     width: 70%;
     height: 60px;
 }
-
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     transition: all 0.8s;
