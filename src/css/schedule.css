@@ -34,3 +34,15 @@
     place-items: center;
     font-family: 'Roboto';
 }
+@media screen and (max-width: 468px){
+    .header-table:nth-child(1),.table-data:nth-child(1){
+        width: 40%;
+
+    }
+    .header-table:nth-child(3),.table-data:nth-child(3){
+        display: none;
+    }
+    .table-data{
+        font-size: 0.8em;
+    }
+}
