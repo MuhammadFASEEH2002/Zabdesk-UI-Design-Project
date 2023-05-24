@@ -68,9 +68,9 @@ i{
     transition: all 0.8s;
     position: relative;
     background-color: var(--active);
-    border-top-left-radius: 2em;
-    border-bottom-left-radius: 2em;
-    width: 95%;
+    /* border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em; */
+    width: 100%;
     margin-left: auto;
     color: #FFF !important;
 }
@@ -87,9 +87,9 @@ i{
 .active {
     position: relative;
     background-color: var(--active);
-    border-top-left-radius: 2em;
-    border-bottom-left-radius: 2em;
-    width: 95%;
+    /* border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em; */
+    width: 100%;
     margin-left: auto;
     color: #FFF !important;
 }

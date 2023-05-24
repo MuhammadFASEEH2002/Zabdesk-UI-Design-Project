@@ -1,42 +1,50 @@
 
 
-.title-header{
+.header{
     width: 100%;
-}
-.title-header h1{
-   font-family: 'Roboto';
-   font-size: 2em;
-}
-.title-header h1::after{
-    content: "";
-    width: 20px;
-    height : 100px;
     background-color: var(--active);
+    padding: 0.8em;
+    text-align: center;
 }
-
+.header h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-family: 'Roboto';
+}
 
 .course-card {
     width: 24%;
     background-color: var(--active);
-    padding: 0.5em;
+    padding: 0.8em;
     color: #fff;
     border-radius: 0.5em;
     margin: 0.5em 0.2em;
 }
-.course-card h1 , .course-card h4{
+.course-card h1{
     font-family: 'Roboto';
-    margin: 0.4em;
+    margin-bottom: 0.5em;
 }
+
 .course-card .cousre-links{
     display: flex;
     flex-direction: column;
+
 }
 .course-card .cousre-links a {
     width: 100%;
     text-align: justify;
     color: #fff;
     font-family: 'Roboto';
+    text-decoration: none;
 }
+.course-card .cousre-links a:hover {
+    width: 100%;
+    text-align: justify;
+    color: black;
+    font-family: 'Roboto';
+    text-decoration: underline;
+}
+
 
 
 @media screen and (max-width : 768px) {
