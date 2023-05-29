@@ -62,6 +62,7 @@ i{
 .top img {
     width: 70%;
     height: 60px;
+    visibility: hidden;
 }
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -82,6 +83,7 @@ i{
     font-size: 36px;
     margin-left: 50px;
     cursor: pointer;
+    display: none;
 }
 
 .active {
@@ -126,14 +128,23 @@ i{
     right: 10px;
     cursor: pointer;
     font-size: 2.5em;
+    visibility: hidden;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-    transition: margin-left .5s;
+    transition: margin-left .3s;
     padding: 20px;
 }
 
+@media screen and (max-width: 540px) {
+    .open-menu{
+        visibility: visible;
+    }
+    .sidenav .closebtn{
+        display: block;
+    }
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {

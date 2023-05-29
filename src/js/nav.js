@@ -5,20 +5,20 @@ let isOpen = false;
         window.addEventListener("load" , function () {
             console.log(window.innerWidth)
             if(window.innerWidth > 768){
-                openNav() 
+                openNav(true) 
             }
         
           })
         
-        function openNav() {
+        function openNav(isWeb = false) {
             if(isOpen){
                 closeNav()
                 isOpen = false;
                 return ;
             }
             isOpen = true
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("mySidenav").style.width = isWeb ? "250px" : "100svw";
+            document.getElementById("main").style.marginLeft = isWeb ? "250px" :  "100svw";
             
         }
         function closeNav() {
