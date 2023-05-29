@@ -4,7 +4,7 @@
 let isOpen = false;
         window.addEventListener("load" , function () {
             console.log(window.innerWidth)
-            if(window.innerWidth > 768){
+            if(window.innerWidth >= 768){
                 openNav(true) 
             }
         

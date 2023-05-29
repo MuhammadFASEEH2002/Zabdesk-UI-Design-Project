@@ -62,7 +62,7 @@ i{
 .top img {
     width: 70%;
     height: 60px;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
@@ -143,6 +143,9 @@ i{
     }
     .sidenav .closebtn{
         display: block;
+    }
+    .top img {
+        visibility: hidden;
     }
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

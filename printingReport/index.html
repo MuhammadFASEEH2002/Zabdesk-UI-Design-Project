@@ -44,13 +44,13 @@
             <img src="../src/images/pdf_logo.jpg" alt="pdf_logo_image">
             <div class="input-area flex column items-center">
                 <p class="flex" style="align-items: flex-start;">Number of Pages</p>
-                <input type="number"  name="" id="pages" placeholder="Enter Number of Pages to Print" required>
+                <input type="number"  name="" id="pages" placeholder="Enter Number of Pages to Print"  required>
              </div>
              <div class="input-area flex column items-center">
                 <p class="flex" style="align-items: flex-start;">Amount</p>
-                <input type="text"  name="" id="amounts" placeholder="" >
+                <input type="text"  name="" id="amounts" placeholder="" readonly>
              </div> 
-             <button class="print-button" onclick="print()">Print</button>    
+             <button class="print-button" onclick="print()">Calculate & Print</button>   
         </div>    
     </div>
 
@@ -61,10 +61,13 @@
     var page=document.getElementById("pages");
     var amount=document.getElementById("amounts");
     function print(){
+        if(page.value.trim()==""){
+           alert("Enter Number of Pages");
+        } else{
         var pages_num=page.value.trim();
         var total_amount=parseInt(pages_num)*10;
         amount.value="Rs "+ total_amount;
-
+        }
     }
 
 </script>
